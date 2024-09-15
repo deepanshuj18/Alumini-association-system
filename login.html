@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Alumni Network</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">College Logo</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="jobs.html">Job Board</a></li>
+                <li><a href="stories.html">Alumni Stories</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-section">
+            <div class="login-container">
+                <h2>Login to Alumni Network</h2>
+                <form action="login_process.php" method="POST" class="login-form">
+                    <div class="form-group">
+                        <label for="admission_number">Admission Number</label>
+                        <input type="text" id="admission_number" name="admission_number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="login-btn">Log In</button>
+                </form>
+                <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 College Alumni Association. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

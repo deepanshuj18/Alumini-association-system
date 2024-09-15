@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Alumni Network</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">College Logo</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="jobs.html">Job Board</a></li>
+                <li><a href="stories.html">Alumni Stories</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="signup-section">
+            <div class="signup-container">
+                <h2>Join the Alumni Network</h2>
+                <form action="signup_process.php" method="POST"  class="signup-form">
+                    <div class="form-group">
+                        <label for="full_name">Full Name</label>
+                        <input type="text" id="full_name" name="full_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="grad_year">Year of Graduation</label>
+                        <input type="number" id="grad_year" name="grad_year" min="1900" max="2099" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company_name">Company Name</label>
+                        <input type="text" id="company_name" name="company_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="admission_number">Admission Number</label>
+                        <input type="text" id="admission_number" name="admission_number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Course_Name">Course_Name</label>
+                        <input type="text" id="Course_Name" name="Course_Name" required></div>
+                    
+                    <div class="form-group">
+                        <label for="terms">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            I agree to the <a href="terms.html">Terms and Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="signup-btn">Sign Up</button>
+                </form>
+                <p>Already have an account? <a href="login.html">Log in here</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 College Alumni Association. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
